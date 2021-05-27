@@ -21,6 +21,7 @@ export const HeaderImage = styled.div`
     display: flex;
     align-items: center;
     font-size: 100px;
+    color: #fefefe;
     margin-left: auto;
     margin-right: auto;
 `
@@ -30,4 +31,39 @@ export const HeaderBars = styled.div`
     width: 100%;
     height: 100%;
     padding-left: 10px;
+`
+export const HeaderMemeBar = styled.div`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+`
+export const HeaderAnnounceBar = styled.div`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+`
+export const HeaderAboutBar = styled.div`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+`
+export const HeaderHighlightsBar = styled.div`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+`
+export const HeaderSearchBar = styled.div`
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    color: #ffffff;
 `
