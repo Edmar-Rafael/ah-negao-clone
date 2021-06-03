@@ -1,12 +1,16 @@
 import React from 'react';
+import Separator from '../Separator';
 import { MemesContainer } from './styles';
 
 
-function Memes() {
+function Memes({children}) {
   return (
-      <MemesContainer>
-        memes!
-      </MemesContainer>
+    <>
+      <MemesContainer >
+      {children}
+    </MemesContainer>
+    <Separator height={10}/>
+    </>
   );
 }
 
