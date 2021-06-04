@@ -4,13 +4,12 @@ import {
       Header,
       Separator,
       Memes,
-      Date
      } from '../../Components'
-import { getPosts } from '../Services/posts';
+import { getPosts } from '../../Services/posts';
 import dayjs from 'dayjs'
 
 
-function Container() {
+function Container(item) {
   const [posts, setPosts] = useState()
   const date = new Date()
   useEffect(()=> {
@@ -26,9 +25,8 @@ function Container() {
     <BigBox>
         <Header/>
         <Separator height={25}/>
-           {posts && posts.map(post => <Memes>
-            <h1>{dayjs(post.date).format('DD/MM/YYYY')}</h1>
-        </Memes>)}
+           {posts && posts.map(post =>
+        <Memes item={item}/>)}
     </BigBox>
   )
 }

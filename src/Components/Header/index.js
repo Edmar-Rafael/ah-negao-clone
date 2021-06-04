@@ -1,7 +1,6 @@
 import React from 'react';
 import {
       HeaderContainer,
-      HeaderImageBox,
       HeaderImage,
       HeaderBars,
       HeaderMemeBar,
@@ -16,27 +15,27 @@ import { Separator } from "../../Components"
 function Header() {
   return (
       <HeaderContainer>
-          <HeaderImageBox>
-              <HeaderImage>
-                Ah negão!
-              </HeaderImage>
-          </HeaderImageBox>
-          <Separator width={300}/>
+          <HeaderImage/>
+          <Separator width={235}/>
           <HeaderBars>
               <HeaderMemeBar>
-                Envie seu meme!
+                Envie seu meme
               </HeaderMemeBar>
+              <Separator width={38}/>
               <HeaderAnnounceBar>
-                Anunciar!
+                Anunciar
               </HeaderAnnounceBar>
+              <Separator width={38}/>
               <HeaderAboutBar>
-                Sobre!
+                Sobre
               </HeaderAboutBar>
+              <Separator width={38}/>
               <HeaderHighlightsBar>
-                Destaques!
+                Destaques
               </HeaderHighlightsBar>
+              <Separator width={38}/>
               <HeaderSearchBar>
-                olá!
+                olá
               </HeaderSearchBar>
           </HeaderBars>
       </HeaderContainer>

@@ -1,15 +1,28 @@
-import React from 'react';
+import React from 'react';  
+import dayjs from 'dayjs'
+import Line from '../Line';
 import Separator from '../Separator';
-import { MemesContainer } from './styles';
+import { 
+      ImageContainer,
+      MemesContainer,
+      MemesHeader,
+      DateContainer
+     } from './styles';
 
 
-function Memes({children}) {
+function Memes({item}) {
   return (
     <>
       <MemesContainer >
-      {children}
-    </MemesContainer>
-    <Separator height={10}/>
+         <MemesHeader>
+            <DateContainer>
+              {dayjs(item.date).format('DD/MM/YYYY')}
+            </DateContainer>
+            <Line width={843.3} color={'#bdb6b6'}/>
+         </MemesHeader>
+         <ImageContainer/>
+      </MemesContainer>
+      <Separator height={10}/>
     </>
   );
 }
