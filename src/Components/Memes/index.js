@@ -20,9 +20,9 @@ function Memes({item}) {
             </DateContainer>
             <Line width={843.3} color={'#bdb6b6'}/>
          </MemesHeader>
-         <ImageContainer/>
+         <ImageContainer dangerouslySetInnerHTML={{ __html: item.content.rendered }}/>
       </MemesContainer>
-      <Separator height={10}/>
+      <Separator height={30}/>
     </>
   );
 }
