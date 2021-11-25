@@ -1,11 +1,9 @@
-import { Container } from "./Components";
+import { Home } from "./pages";
 
 
 function App() {
   return (
-    <Container>
-      
-    </Container>
+    <Home />
   );
 }
 
